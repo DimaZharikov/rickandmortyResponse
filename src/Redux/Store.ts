@@ -5,11 +5,13 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga'
 import CharListReducer from "./CharList/CharListReducer";
 import {sagaWatcher} from "./sagaWatcher";
+import PersonReducer from "./Persons/PersonsReducer";
 
 
 
 const reducer = combineReducers({
     charList: CharListReducer,
+    person: PersonReducer
 
 
 })

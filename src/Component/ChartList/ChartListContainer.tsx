@@ -1,8 +1,9 @@
 import {FC, memo, useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../../Redux/Store";
-import {charsResponseType, nextPagesCall, setCharsSaga} from "../../Redux/CharList/CharListReducer";
+import { nextPagesCall, setCharsSaga} from "../../Redux/CharList/CharListReducer";
 import CharacterComponent from "./CharacterComponent";
+import {charsResponseType} from "../../Redux/Persons/PersonsReducer";
 
 
 
@@ -17,6 +18,8 @@ const ChartListContainer: FC<Props> = memo(({
     const chars = useSelector<AppRootStateType, Array<charsResponseType>>(state => state.charList.data)
     const fetching = useSelector<AppRootStateType, boolean>(state => state.charList.isFetching)
     const [pages, setPages] = useState<number>(2)
+
+
 
     useEffect(() => {
         // get response to chars

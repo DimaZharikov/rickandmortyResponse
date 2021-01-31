@@ -1,22 +1,24 @@
-import  {FC} from 'react'
+import React, {FC, lazy} from 'react'
 import ChartListContainer from "./Component/ChartList/ChartListContainer";
-import {BrowserRouter, Route} from "react-router-dom";
-import PersonsContainer from "./Component/Persons/PersonsContainer";
+import {Route, Switch, Redirect} from "react-router-dom";
+import {withSuspense} from "./common/withSuspense/withSuspense";
 
 
-interface Props  {
+ const PersonsContainer = lazy(():any  => import ("./Component/Persons/PersonsContainer"));
 
-}
 
-const  App :FC < Props >= ({
-
-                          }) => {
+const App: FC = () => {
 
     return (<div>
-        <BrowserRouter>
-            <ChartListContainer/>
-            <Route path='person/:id?' render = {() => <PersonsContainer/>}/>
-        </BrowserRouter>
+        <Switch>
+
+            <Route exact path={'/person'} render={() => <ChartListContainer/>}/>
+            <Route exact path={'/person/:id'} render={withSuspense(PersonsContainer)}/>
+            <Route path={'/404'} render={() => <h1>404: PAGE NOT FOUND</h1>}/>
+            <Route path={'/'} exact render={() => <Redirect to={'/person'}/>}/>
+            <Redirect from={'*'} to={'/404'}/>
+        </Switch>
+
 
     </div>)
 }

@@ -1,5 +1,5 @@
-import {takeEvery,put, call} from 'redux-saga/effects'
-import {ActionType, addChars, isFetchingLoader, setChars} from "./CharListReducer";
+import {put, call} from 'redux-saga/effects'
+import {ActionType, addCharsSaga, isFetchingLoader, setChars} from "./CharListReducer";
 
 //------------------------------API-------------------------------
 //for chartListContainer
@@ -30,7 +30,7 @@ export function* nextChars(action:{type:  ActionType.REQUEST_CHARS_NEXT_PAGE,  p
     try {
         yield put(isFetchingLoader(true))
         const payload = yield call (fetchGetChars,  action.payload )
-        yield put(addChars(payload.results))
+        yield put(addCharsSaga(payload.results))
         yield put (isFetchingLoader(false))
     }
     catch (error){
