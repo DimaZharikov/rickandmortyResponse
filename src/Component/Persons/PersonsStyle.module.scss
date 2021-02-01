@@ -1,0 +1,28 @@
+@import "src/stylesVariable/variable";
+
+.block{
+  display: flex;
+  font-size: 1.3em;
+  cursor: context-menu;
+  img{
+    height: 550px;
+    width: 500px;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 15px;
+  }
+  a{
+    text-decoration: none;
+    color: orange;
+  }
+
+}
+
+.form{
+  font-size: 1.3em;
+  border: 3px solid #a06666;
+  border-radius: 15px;
+
+
+}
+

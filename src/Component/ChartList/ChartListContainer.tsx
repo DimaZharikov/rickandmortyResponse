@@ -1,10 +1,11 @@
-import {FC, memo, useEffect, useState} from "react";
+import React, {FC, memo, useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../../Redux/Store";
 import { nextPagesCall, setCharsSaga} from "../../Redux/CharList/CharListReducer";
 import CharacterComponent from "./CharacterComponent";
 import {charsResponseType} from "../../Redux/Persons/PersonsReducer";
-
+import style from './charListsStyle.module.scss'
+import HeaderComponent from "../Header/HeaderComponent";
 
 
 const ChartListContainer: FC = memo(({
@@ -45,14 +46,16 @@ const ChartListContainer: FC = memo(({
     }, [scrollHandler])
 
 
-    return (<div>
-        <div></div>
-        {
-            chars.map((item, id) => {
-                return <CharacterComponent key={id}
-                                           chars={item}/>
-            })
-        }
+    return (<div className={style.body}>
+        <div><HeaderComponent title = {'Rick and Morty Chars'} /></div>
+            {
+                chars.map((item, id) => {
+                    return <CharacterComponent key={id}
+                                               chars={item}/>
+                })
+            }
+
+
     </div>)
 
 })

@@ -1,0 +1,78 @@
+@import './src/stylesVariable/variable';
+
+.body{
+
+  padding: 2em;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.wrapperItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//mapped items charlistComponent
+.items {
+  text-align: center;
+  width: 300px;
+  min-height: 550px;
+  padding: 1em;
+  margin: 3em;
+  border: 3px solid #675151;
+  border-radius: 3em;
+
+
+
+  .imagesBlock{
+    align-items: center;
+
+  }
+
+  img {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+
+  }
+
+  a {
+
+    text-decoration: none;
+    font-size: 1.3em;
+    color: whitesmoke;
+    text-align: center;
+    font-family: $fontFamalyHeader;
+
+  }
+  a:hover{
+    color: #49ff18;
+    transition: .5s ease-in-out;
+  }
+
+
+  h2{
+    color: whitesmoke;
+    cursor:context-menu;
+  }
+
+}
+
+
+
+.headlineCard {
+  opacity: 90%;
+  text-decoration: underline white;
+
+}
+
+.alive {
+  color: green;
+}
+
+.dead {
+  color: #f60b3e;
+}

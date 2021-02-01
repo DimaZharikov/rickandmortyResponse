@@ -12,13 +12,14 @@ async function fetchGetPerson(id: number) {
 
 export function* getPersons(action: { type: ActionType.REQUEST_PERSON, payload: number }) {
     try {
-    debugger
         const payload = yield call(fetchGetPerson, action.payload)
         yield   put(setPerson(payload))
     } catch (error) {
         console.log(error)
     }
 }
+
+
 
 
 

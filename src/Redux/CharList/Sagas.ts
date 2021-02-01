@@ -8,10 +8,6 @@ export async function fetchGetChars(nextPage: number) {
     return   await res.json()
 }
 
-
-
-
-
 // -----------------------------SAGA-------------------------------
 //ChartListContainer
 export function* getChars(action:{type: ActionType.REQUEST_CHARS,  payload: number  }  ) {

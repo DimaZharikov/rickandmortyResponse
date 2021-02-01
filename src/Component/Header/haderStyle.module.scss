@@ -1,0 +1,28 @@
+@import './src/stylesVariable/variable';
+
+.body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  text-justify: auto;
+
+
+  h1 {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+    font-family: $fontFamalyHeader;
+    font-size: 10em;
+    color: whitesmoke;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 4px -2px 14px rgba(206, 89, 55, 0);
+    cursor: context-menu;
+
+  }
+
+  h1:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #f60b3e, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 4px -2px 14px rgba(206, 89, 55, 0);
+    transition: 1s ease-in;
+  }
+
+}
