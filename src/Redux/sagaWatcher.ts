@@ -2,7 +2,7 @@ import {takeEvery} from "redux-saga/effects";
 import {ActionType as EnumCharList} from "./CharList/CharListReducer";
 import {getChars, nextChars} from "./CharList/Sagas";
 import {ActionType as EnumPerson} from "./Persons/PersonsReducer";
-import {getPersons, getPersonsId} from "./Persons/Sagas";
+import {getPersons} from "./Persons/Sagas";
 
 
 //------------------WATCHER-----------------------------
@@ -14,8 +14,7 @@ export function* sagaWatcher(){
     yield takeEvery(EnumCharList.NEXT_PAGE, nextChars)
 
     //PersonsContainer
-
     yield takeEvery(EnumPerson.REQUEST_PERSON, getPersons)
-    yield takeEvery(EnumPerson.REQUEST_PERSON_ID, getPersonsId)
+
 
 }

@@ -1,4 +1,4 @@
-import {ActionType, setPerson, setPersonIdSaga} from "./PersonsReducer";
+import {ActionType, setPerson} from "./PersonsReducer";
 import {call, put} from "redux-saga/effects";
 
 
@@ -19,15 +19,7 @@ export function* getPersons(action: { type: ActionType.REQUEST_PERSON, payload: 
         console.log(error)
     }
 }
-export function* getPersonsId(action: { type: ActionType.REQUEST_PERSON_ID, payload: number }) {
-    try {
 
-        const payload = yield call(fetchGetPerson, action.payload)
-        yield   put(setPersonIdSaga(payload.results.id))
-    } catch (error) {
-        console.log(error)
-    }
-}
 
 
 

@@ -9,7 +9,7 @@ import PersonReducer from "./Persons/PersonsReducer";
 
 
 
-const reducer = combineReducers({
+export const reducer = combineReducers({
     charList: CharListReducer,
     person: PersonReducer
 

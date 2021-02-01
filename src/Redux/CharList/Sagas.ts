@@ -3,7 +3,7 @@ import {ActionType, addCharsSaga, isFetchingLoader, setChars} from "./CharListRe
 
 //------------------------------API-------------------------------
 //for chartListContainer
-async function fetchGetChars(nextPage: number) {
+export async function fetchGetChars(nextPage: number) {
     const res = await fetch(`https://rickandmortyapi.com/api/character?page=${nextPage}`)
     return   await res.json()
 }

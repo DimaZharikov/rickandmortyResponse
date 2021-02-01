@@ -7,11 +7,7 @@ import {charsResponseType} from "../../Redux/Persons/PersonsReducer";
 
 
 
-interface Props {
-
-}
-
-const ChartListContainer: FC<Props> = memo(({
+const ChartListContainer: FC = memo(({
 
                                        }) => {
     const dispatch = useDispatch()
@@ -50,7 +46,7 @@ const ChartListContainer: FC<Props> = memo(({
 
 
     return (<div>
-
+        <div></div>
         {
             chars.map((item, id) => {
                 return <CharacterComponent key={id}

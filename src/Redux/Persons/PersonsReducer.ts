@@ -38,11 +38,11 @@ const initialState: stateProps = {
 //Type
 export enum ActionType {
     SET_PERSON = "PERSON-CONTAINER/SET-PERSON",
-    GET_PERSON_ID = "PERSON-CONTAINER/GET_PERSON_ID",
+
 
     //sagaRequest
     REQUEST_PERSON = "/CHARACTER-CONTAINER/REQUEST_PERSON",
-    REQUEST_PERSON_ID = "/CHARACTER-CONTAINER/REQUEST_PERSON_ID",
+
 
 
 }
@@ -62,10 +62,7 @@ export const setPerson = (data: charsResponseType): Action<charsResponseType> =>
     payload: data
 })
 
-export const getPersonId = (id: number): Action<number> => ({
-    type: ActionType.GET_PERSON_ID,
-    payload: id
-})
+
 
 
 //sagaCreator
@@ -74,11 +71,7 @@ export const setPersonIdSaga = (id: number) : {type: ActionType.REQUEST_PERSON, 
     payload: id
 
 })
-export const setPersonSaga = (person: charsResponseType): Action<charsResponseType> => ({
-    type: ActionType.REQUEST_PERSON_ID,
-    payload: person
 
-})
 
 
 
@@ -96,13 +89,6 @@ const PersonReducer = (state: stateProps = initialState, action: Action<charsRes
             };
         }
 
-
-
-        case ActionType.REQUEST_PERSON_ID:
-            return {
-                ...state,
-                data: action.payload
-            }
     }
     return state
 }
