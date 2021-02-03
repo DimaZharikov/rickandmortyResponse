@@ -20,8 +20,9 @@ const App: FC = () => {
             <Switch>
                 <Route className = {style.body} exact path={RoutingType.person} render={() => <ChartListContainer/>}/>
                 <Route exact path={RoutingType.personId} render={withSuspense(PersonsContainer)}/>
-                <Route path={RoutingType.error} render={() => <h1>404: PAGE NOT FOUND</h1>}/>
+
                 <Route path={'/'} exact render={() => <Redirect to={RoutingType.person}/>}/>
+                <Route path={RoutingType.error} render={() => <h1>404: PAGE NOT FOUND</h1>}/>
                 <Redirect from={'*'} to={RoutingType.error}/>
             </Switch>
         </div>
