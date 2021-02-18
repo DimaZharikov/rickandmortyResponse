@@ -4,6 +4,7 @@ import {Route, Switch, Redirect} from "react-router-dom";
 import {withSuspense} from "./common/withSuspense/withSuspense";
 import {RoutingType} from "./enum/Routing";
 import style from './appStyles.module.scss'
+import LocationComponent from "./Component/Location/LocationComponent";
 
 
  const PersonsContainer = lazy(():any  => import ("./Component/Persons/PersonsContainer"));
@@ -20,6 +21,7 @@ const App: FC = () => {
             <Switch>
                 <Route className = {style.body} exact path={RoutingType.person} render={() => <ChartListContainer/>}/>
                 <Route exact path={RoutingType.personId} render={withSuspense(PersonsContainer)}/>
+                <Route exact path={RoutingType.locationId} render={withSuspense(LocationComponent)}/>
 
                 <Route path={'/'} exact render={() => <Redirect to={RoutingType.person}/>}/>
                 <Route path={RoutingType.error} render={() => <h1>404: PAGE NOT FOUND</h1>}/>

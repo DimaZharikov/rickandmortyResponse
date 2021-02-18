@@ -16,6 +16,7 @@ const PersonComponent: FC<Props> = ({
                                     }) => {
 
 
+
     return (<div key={person?.id} >
         <HeaderComponent title={`Name: ${person?.name}`}/>
         <NavLink to = {'/person'}>
@@ -35,7 +36,7 @@ const PersonComponent: FC<Props> = ({
                 </div>
                 <div>
                     <h2>Origin: <a href={person?.origin.url}>{person?.origin.name}</a></h2>
-                    <h2>Location:<a href={person?.location.url}>{person?.origin.name}</a></h2>
+                    <h2>Location:<NavLink to={`/location/${person ? person.location.url.replace(/\D+/gm, '') : null} `}>{person?.origin.name}</NavLink></h2>
                 </div>
                 <div>
                     <form action="Episode" >

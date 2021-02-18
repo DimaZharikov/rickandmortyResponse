@@ -6,14 +6,14 @@ import createSagaMiddleware from 'redux-saga'
 import CharListReducer from "./CharList/CharListReducer";
 import {sagaWatcher} from "./sagaWatcher";
 import PersonReducer from "./Persons/PersonsReducer";
+import LocationReducer from "./location/LocationReducer";
 
 
 
 export const reducer = combineReducers({
     charList: CharListReducer,
-    person: PersonReducer
-
-
+    person: PersonReducer,
+    location:LocationReducer
 })
 
 

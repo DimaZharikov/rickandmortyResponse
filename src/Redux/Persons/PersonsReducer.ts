@@ -79,8 +79,6 @@ export const setPersonIdSaga = (id: number) : {type: ActionType.REQUEST_PERSON, 
 
 const PersonReducer = (state: stateProps = initialState, action: Action<charsResponseType>): stateProps => {
     switch (action.type) {
-
-
         case ActionType.SET_PERSON:{
             debugger
             return {
