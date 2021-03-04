@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/rickandmortyResponse/person/static/css/main.c4908617.chunk.css",
-    "main.js": "/rickandmortyResponse/person/static/js/main.52ed9206.chunk.js",
-    "main.js.map": "/rickandmortyResponse/person/static/js/main.52ed9206.chunk.js.map",
-    "runtime-main.js": "/rickandmortyResponse/person/static/js/runtime-main.10a4a06b.js",
-    "runtime-main.js.map": "/rickandmortyResponse/person/static/js/runtime-main.10a4a06b.js.map",
-    "static/js/2.1d0905a5.chunk.js": "/rickandmortyResponse/person/static/js/2.1d0905a5.chunk.js",
-    "static/js/2.1d0905a5.chunk.js.map": "/rickandmortyResponse/person/static/js/2.1d0905a5.chunk.js.map",
-    "static/js/3.0e6aab6f.chunk.js": "/rickandmortyResponse/person/static/js/3.0e6aab6f.chunk.js",
-    "static/js/3.0e6aab6f.chunk.js.map": "/rickandmortyResponse/person/static/js/3.0e6aab6f.chunk.js.map",
+    "main.js": "/rickandmortyResponse/person/static/js/main.36987ca9.chunk.js",
+    "main.js.map": "/rickandmortyResponse/person/static/js/main.36987ca9.chunk.js.map",
+    "runtime-main.js": "/rickandmortyResponse/person/static/js/runtime-main.208b5721.js",
+    "runtime-main.js.map": "/rickandmortyResponse/person/static/js/runtime-main.208b5721.js.map",
+    "static/js/2.507c27c2.chunk.js": "/rickandmortyResponse/person/static/js/2.507c27c2.chunk.js",
+    "static/js/2.507c27c2.chunk.js.map": "/rickandmortyResponse/person/static/js/2.507c27c2.chunk.js.map",
+    "static/js/3.b7145b6e.chunk.js": "/rickandmortyResponse/person/static/js/3.b7145b6e.chunk.js",
+    "static/js/3.b7145b6e.chunk.js.map": "/rickandmortyResponse/person/static/js/3.b7145b6e.chunk.js.map",
     "static/css/4.4f23579b.chunk.css": "/rickandmortyResponse/person/static/css/4.4f23579b.chunk.css",
-    "static/js/4.5061a8d0.chunk.js": "/rickandmortyResponse/person/static/js/4.5061a8d0.chunk.js",
-    "static/js/4.5061a8d0.chunk.js.map": "/rickandmortyResponse/person/static/js/4.5061a8d0.chunk.js.map",
+    "static/js/4.edda70de.chunk.js": "/rickandmortyResponse/person/static/js/4.edda70de.chunk.js",
+    "static/js/4.edda70de.chunk.js.map": "/rickandmortyResponse/person/static/js/4.edda70de.chunk.js.map",
     "index.html": "/rickandmortyResponse/person/index.html",
     "static/css/4.4f23579b.chunk.css.map": "/rickandmortyResponse/person/static/css/4.4f23579b.chunk.css.map",
     "static/css/main.c4908617.chunk.css.map": "/rickandmortyResponse/person/static/css/main.c4908617.chunk.css.map",
-    "static/js/2.1d0905a5.chunk.js.LICENSE.txt": "/rickandmortyResponse/person/static/js/2.1d0905a5.chunk.js.LICENSE.txt",
-    "static/js/3.0e6aab6f.chunk.js.LICENSE.txt": "/rickandmortyResponse/person/static/js/3.0e6aab6f.chunk.js.LICENSE.txt",
-    "static/media/Ellipsis-4.2s-197px.ce28a318.svg": "/rickandmortyResponse/person/static/media/Ellipsis-4.2s-197px.ce28a318.svg"
+    "static/js/2.507c27c2.chunk.js.LICENSE.txt": "/rickandmortyResponse/person/static/js/2.507c27c2.chunk.js.LICENSE.txt",
+    "static/js/3.b7145b6e.chunk.js.LICENSE.txt": "/rickandmortyResponse/person/static/js/3.b7145b6e.chunk.js.LICENSE.txt",
+    "static/media/Ellipsis-4.2s-197px.45b9dd44.svg": "/rickandmortyResponse/person/static/media/Ellipsis-4.2s-197px.45b9dd44.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.10a4a06b.js",
-    "static/js/2.1d0905a5.chunk.js",
+    "static/js/runtime-main.208b5721.js",
+    "static/js/2.507c27c2.chunk.js",
     "static/css/main.c4908617.chunk.css",
-    "static/js/main.52ed9206.chunk.js"
+    "static/js/main.36987ca9.chunk.js"
   ]
 }
