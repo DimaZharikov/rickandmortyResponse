@@ -6,6 +6,8 @@ import {getResidentsSaga, setLocationIdSaga} from "../../Redux/location/Location
 import HeaderComponent from "../Header/HeaderComponent";
 import {charsResponseType} from "../../Redux/Persons/PersonsReducer";
 import CharacterComponent from "../ChartList/CharacterComponent";
+import styles from "../Persons/PersonsStyle.module.scss";
+import {v1} from "uuid";
 
 const LocationComponent : FC = () => {
 
@@ -26,7 +28,6 @@ const LocationComponent : FC = () => {
 
     useEffect(() => {
         dispatch(setLocationIdSaga(+id))
-        dispatch(getResidentsSaga(charsId))
     }, [id])
 
 
@@ -44,13 +45,26 @@ const LocationComponent : FC = () => {
                 <h2>Dimension: {loc?.dimension}</h2>
             </div>
             <div>
-                <h1>Residents:</h1>
-                <p>{loc?.residents}</p>
+                <form action="residents">
+                    <h1>Residents:</h1>
+                    <select name='resident'>
+                        {
+                            loc?.residents.map((e, index)=> {
+                                return <option key={index}>{e}</option>
+                            })
+                        }
+                    </select>
+                </form>
+
+
+
 
             </div>
 
         </div>
     );
 };
+
+
 
 export default LocationComponent;

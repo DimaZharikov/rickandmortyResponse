@@ -61,9 +61,9 @@ export const setLocation = (data: locationResponseType): Action<locationResponse
 })
 
 
-export const setResidents = (residents: Array<charsResponseType> ) : Action<Array<charsResponseType>> => ({
+export const setResidents = (resident: charsResponseType ) : Action<charsResponseType> => ({
     type: ActionType.GET_RESIDENTS,
-    payload: residents
+    payload: resident
 })
 
 
