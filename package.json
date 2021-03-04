@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DimaZharikov.github.io/rickandmortyResponse/person",
+  "homepage": "https://DimaZharikov.github.io/rickandmortyResponse",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
